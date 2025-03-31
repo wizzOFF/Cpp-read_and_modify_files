@@ -14,7 +14,10 @@ int main()
 
    if(monFlux)  //On teste si tout est OK
    {
-        //Tout est OK, on peut utiliser le fichier
+        monFlux << "Bonjour, je suis une phrase écrite dans un fichier." << endl;
+        monFlux << 42.1337 << endl;
+        int age(36);
+        monFlux << "J'ai " << age << " ans." << endl;
    }
    else
    {
