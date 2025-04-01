@@ -50,7 +50,7 @@ int main()
    }
 
 */
-
+/*
    ifstream monFlux("README");
    
    string mot;
@@ -61,4 +61,37 @@ int main()
    getline(monFlux, ligne); //On lit une ligne complète
    
    return 0; 
+}
+*/
+
+
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std; 
+
+int main()
+{
+   ifstream fichier("README");
+
+   if(fichier)
+   {
+      //L'ouverture s'est bien passée, on peut donc lire
+
+      string ligne; //Une variable pour stocker les lignes lues
+
+      while(getline(fichier, ligne)) //Tant qu'on n'est pas à la fin, on lit
+      {
+         cout << ligne << endl;
+         //Et on l'affiche dans la console
+         //Ou alors on fait quelque chose avec cette ligne
+         //À vous de voir
+      }
+   }
+   else
+   {
+      cout << "ERREUR: Impossible d'ouvrir le fichier en lecture." << endl;
+   }
+
+   return 0;
 }
