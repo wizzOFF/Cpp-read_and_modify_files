@@ -5,6 +5,7 @@ using namespace std;
 
 int main()
 {
+/*
    // ofstream monFlux("README");
    string const nomFichier("README");
    
@@ -23,6 +24,18 @@ int main()
    {
         cout << "ERREUR: Impossible d'ouvrir le fichier." << endl;
    }
+*/
+   
+   ifstream monFlux("README");  //Ouverture d'un fichier en lecture
 
-   return 0;
+   if(monFlux)
+   {
+       //Tout est prêt pour la lecture.
+   }
+   else
+   {
+       cout << "ERREUR: Impossible d'ouvrir le fichier en lecture." << endl;
+   }
+   
+   return 0; 
 }
