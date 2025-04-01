@@ -30,7 +30,8 @@ int main()
 
    if(monFlux)
    {
-       //Tout est prêt pour la lecture.
+     string ligne;
+     getline(monFlux, ligne); //On lit une ligne complète
    }
    else
    {
