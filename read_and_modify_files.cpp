@@ -30,8 +30,14 @@ int main()
 
    if(monFlux)
    {
+     /*
      string ligne;
      getline(monFlux, ligne); //On lit une ligne complète
+     */
+     double nombre;
+     monFlux >> nombre; //Lit un nombre à virgule depuis le fichier
+     // string mot;
+     // monFlux >> mot;    //Lit un mot depuis le fichier
    }
    else
    {
