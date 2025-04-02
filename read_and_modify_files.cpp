@@ -96,5 +96,7 @@ int main()
    int position = fichier.tellp(); //On récupère la position
    cout << "Nous nous situons au " << position << "eme caractere du fichier." << endl;
 
+   flux.seekg(nombreCaracteres, position);
+
    return 0;
 }
